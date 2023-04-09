@@ -9,7 +9,7 @@ def solution(x, y) -> bool: # Одна или две выборке на вхо�
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
-    pval = stats.ttest_ind(rvs1, rvs2, equal_var=False).pvalue
+    pval = stats.ttest_ind(x, y, equal_var=False).pvalue
     if (pval < 0.08):
       ans = True
     else:
